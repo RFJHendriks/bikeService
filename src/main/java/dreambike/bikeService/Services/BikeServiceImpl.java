@@ -3,7 +3,6 @@ package dreambike.bikeService.Services;
 import java.util.List;
 import java.util.Set;
 
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,12 +14,10 @@ import dreambike.bikeService.classes.BikeType;
 public class BikeServiceImpl implements BikeService {
 
 	private final BikeRepository bikeRepository;
-	private final ModelMapper modelMapper;
 	
 	@Autowired
-	public BikeServiceImpl(BikeRepository bikeRepository, ModelMapper modelMapper) {
+	public BikeServiceImpl(BikeRepository bikeRepository) {
 		this.bikeRepository = bikeRepository;
-		this.modelMapper = modelMapper;
 	}
 	
 	@Override

@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import dreambike.bikeService.Repositories.BikeRepository;
 import dreambike.bikeService.Services.BikeService;
 import dreambike.bikeService.classes.Bike;
 import dreambike.bikeService.classes.BikeType;
